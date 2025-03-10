@@ -1,0 +1,125 @@
+.hero {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #002d62;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 span {
+    color: #ff8200;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #444;
+    margin: 15px 0;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-buttons button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.join-btn, .explore-btn {
+    background-color: #118577;
+    color: white;
+}
+
+.join-btn:hover, .explore-btn:hover {
+    background-color: #0d6e5c;
+}
+
+/* Hero Image Styling */
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Scrolling Logo Section */
+.logo-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    margin-top: 30px;
+}
+
+.logo-track {
+    display: flex;
+    gap: 50px;
+    width: 200%;
+    animation: scrollText 20s linear infinite;
+}
+
+.logo-track span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #33333385;
+    text-transform: uppercase;
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
+}
+
+/* Keyframe animation for scrolling */
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+}

@@ -45,11 +45,12 @@ const Footer: React.FC = () => {
           <a href="#">Cookie Settings</a>
         </div>
         <div className="footer-icons">
-          <a href="#"><i className="fab fa-facebook"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
-          <a href="#"><i className="fab fa-x-twitter"></i></a>
-          <a href="#"><i className="fab fa-linkedin"></i></a>
-          <a href="#"><i className="fab fa-youtube"></i></a>
+        <i className="fa-brands fa-facebook"></i>
+        <i className="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-youtube"></i>
+
         </div>
       </div>
     </footer>
